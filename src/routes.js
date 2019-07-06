@@ -1,8 +1,7 @@
 import { Router } from 'express';
-
+import authMiddleware from './app/middlewares/auth';
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
-import authMiddleware from './app/middlewares/auth';
 
 const routes = Router();
 
